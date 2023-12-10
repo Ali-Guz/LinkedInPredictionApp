@@ -47,7 +47,7 @@ y_probabilities = log_reg.predict_proba(X_test)
 # Streamlit
 
 st.markdown("<h3 style='color: red;'>Are you on LinkedIn?</h3>", unsafe_allow_html=True)
-st.markdown("##### Welcome to my predictive analysis app!")
+#st.markdown("##### Welcome to my predictive analysis app!")
 st.markdown("My goal is to determine the likelihood that someone is a LinkedIn user based on various demographic factors.")
 st.markdown("Please take a moment to fill out the following questions. Once you submit your responses, the app will provide you with a prediction of whether you are likely to be a LinkedIn user.")
 st.markdown("<h6 style='color: red;'> Let's get started!</h6>", unsafe_allow_html=True)
