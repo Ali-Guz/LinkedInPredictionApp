@@ -16,8 +16,8 @@ ss = pd.DataFrame({
     "income": np.where(s['income'] > 9, np.nan, s['income']),
     "education": np.where(s['educ2'] > 8, np.nan, s['educ2']),
     "parent": s['par'].apply(clean_sm),
-    "married": np.where(s['marital'] == 1, 1, 0),  # Assuming married is 1
-    "female": np.where(s['gender'] == 2, 1, 0),   # Assuming female is 2
+    "married": np.where(s['marital'] == 1, 1, 0),  # married is 1
+    "female": np.where(s['gender'] == 2, 1, 0),   # female is 2
     "age": np.where(s['age'] > 98, np.nan, s['age'])
 }).dropna()
 
